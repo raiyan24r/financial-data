@@ -22,6 +22,7 @@ class RequestTest extends TestCase
             'from'          => '2022-08-09',
             'to'            => '2022-09-04',
             'companyName'   => 'Atlantic American Corporation',
+            'sendEmail'     => 'true',
         ];
 
         $this->formSubmit($data)->assertStatus(200);
